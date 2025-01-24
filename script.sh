@@ -14,13 +14,8 @@ check_commits_today() {
 
 # Function to run the Python script and commit the changes
 run_and_commit() {
-    # Generate a random number between 5 and 15
-    local runs=$((RANDOM % 11 + 5))
-
-    echo "Running $PYTHON_SCRIPT $runs times..."
-    for ((i = 1; i <= runs; i++)); do
-        python "$PYTHON_SCRIPT"
-    done
+    # Run the Python script
+    python "$PYTHON_SCRIPT"
 
     # Stage and commit changes
     git add .
@@ -40,6 +35,7 @@ while true; do
         run_and_commit
     else
         echo "Commits already exist for today. Skipping execution."
+        run_and_commit
     fi
 
     # Wait for 5 hours before checking again
