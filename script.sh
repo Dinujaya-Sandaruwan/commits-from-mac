@@ -34,7 +34,7 @@ while true; do
         done
     else
         echo "Commits already exist for today. Skipping execution."
-
+fi
     # Wait for 5 hours before checking again
     echo "Sleeping for 5 hours..."
     sleep 5h
