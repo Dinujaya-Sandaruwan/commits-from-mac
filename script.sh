@@ -33,6 +33,20 @@ while true; do
             git push -u origin "$BRANCH"
         done
     else
+                # Generate random number between 5 and 10
+        runs=$((RANDOM % 6 + 5))
+
+        echo "Running $PYTHON_SCRIPT $runs times..."
+        
+        # Run the script specified number of times
+        for ((i = 1; i <= runs; i++)); do
+            python "$PYTHON_SCRIPT"
+            
+            # Commit changes after each run
+            git add .
+            git commit -m "Auto commit $i of $runs on $(date +"%Y-%m-%d %H:%M:%S")"
+            git push -u origin "$BRANCH"
+        done
         echo "Commits already exist for today. Skipping execution."
 fi
     # Wait for 5 hours before checking again
