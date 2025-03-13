@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 200">
+    <!-- Body -->
+    <line x1="150" y1="70" x2="150" y2="130" stroke="gray" stroke-width="4" />
+
+    <!-- Antennae -->
+    <line x1="150" y1="70" x2="140" y2="50" stroke="gray" stroke-width="2" />
+    <line x1="150" y1="70" x2="160" y2="50" stroke="gray" stroke-width="2" />
+    <circle cx="140" cy="50" r="2" fill="gray" />
+    <circle cx="160" cy="50" r="2" fill="gray" />
+
+    <!-- Left Wings -->
+    <path d="M150 85 C120 60, 80 60, 70 100 C80 130, 120 140, 150 115" fill="#89CFF0" stroke="gray"
+        stroke-width="1.5" />
+
+    <!-- Right Wings -->
+    <path d="M150 85 C180 60, 220 60, 230 100 C220 130, 180 140, 150 115" fill="#89CFF0"
+        stroke="gray" stroke-width="1.5" />
+
+    <!-- <path d="M100 75 C90 170, 220 60, 230 100 C220 130, 180 140, 150 115" fill="green"
+    stroke="green" /> -->
+
+    <!-- Wing patterns - simple dots -->
+    <circle cx="110" cy="90" r="5" fill="#4169E1" />
+    <circle cx="190" cy="90" r="5" fill="#4169E1" />
+</svg>
